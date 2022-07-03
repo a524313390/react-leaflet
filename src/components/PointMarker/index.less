@@ -1,0 +1,139 @@
+.towns-cricle {
+
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    color: #00eaff;
+}
+
+.towns-cricle .circle {
+    width: 50%;
+    height: 50%;
+    background-color: #1774dc;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+}
+
+.towns-cricle .circle-aniamte {
+    top: 35%;
+    left: 35%;
+    background-color: #ef9338;
+}
+
+.towns-cricle .circle1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-animation: halo 3.5s infinite;
+    -moz-animation: halo 3.5s infinite;
+    animation: halo 3.5s infinite;
+}
+
+.towns-cricle .circle2 {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 11;
+    -webkit-animation: halo 2s infinite;
+    -moz-animation: halo 2s infinite;
+    animation: halo 2s infinite;
+}
+
+.towns-cricle .liner {
+    background-image: radial-gradient(transparent 40%, #1c87ff 70%);
+}
+
+.towns-cricle .big-liner {
+    background-image: radial-gradient(transparent 40%, #ef9338 70%);
+    width: 120%;
+    height: 120%;
+}
+
+.towns-cricle .big-width {
+    width: 120% !important;
+    height: 120% !important;
+}
+
+.towns-cricle .big-width2 {
+    width: 90%;
+    height: 90%;
+}
+
+.towns-cricle .big-name {
+    color: #fff !important;
+}
+
+.towns-cricle .circle-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.towns-cricle .circle-text .name {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.towns-cricle .circle-text .text-liner {
+    background-image: linear-gradient(#fff 0%, #ffa200 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.towns-cricle .circle-text .text-big-liner {
+    color: #fff;
+}
+
+.towns-cricle .circle-text p {
+    margin: 0;
+}
+
+.towns-cricle .circle-text p .text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.towns-cricle .circle-text p .home {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@keyframes halo {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
